@@ -1,0 +1,154 @@
+/**** Titre ****/
+
+.haut {
+
+    font-size: 5em;
+
+    padding: 16px;
+    text-align: center;
+    font-family: monospace;
+
+}
+
+/************ nav barre **********/
+ul {
+    /* disposition */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* repartir dans ma nav barre */
+    list-style-type: none;
+    /* marge exterieur */
+    margin: 0;
+    /* marge interieur */
+    padding: 0;
+    /* depassement du contenue */
+    overflow: hidden;
+    /* avoir le fond */
+    background-color: rgb(36, 26, 24);
+}
+
+li {
+    /* les alignés */
+    float: left;
+}
+
+li a {
+    /* affichage exterieur a l'element */
+    display: block;
+    /* couleur du texte */
+    color: white;
+    /* alignement */
+    text-align: center;
+    /* marge interieur */
+    padding: 14px 16px;
+    /* pas de soulignement */
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* change de couleur quand je passe sur le menu */
+    color: rgb(239, 146, 2);
+    border-bottom: 2px solid rgb(239, 146, 2);
+}
+
+.sous {
+    /* masque l'element */
+    display: none;
+    /* ombre */
+    box-shadow: 0px 1px 2px #CCC;
+    /* couleur de fond */
+    background-color: rgb(30, 20, 20);
+    /* disposition */
+    position: absolute;
+    /* largeur a la page */
+    width: 12%;
+    /* pour passer au dessus des elements */
+    z-index: 1000;
+
+}
+
+nav>ul li:hover .sous {
+    /* affichage exterieur a l'element */
+    display: block;
+}
+
+.sous li {
+    /* pas d'alignement */
+    float: none;
+    /* largeur */
+    width: 100%;
+    /* aligner a gauche */
+    text-align: left;
+}
+
+.sous a {
+    /* marge interieur */
+    padding: 10px;
+    /* pas de bordure basse */
+    border-bottom: none;
+}
+
+.sous a:hover {
+    /* pas de bordure basse */
+    border-bottom: none;
+    /* couleur de fond */
+    background-color: black;
+}
+
+.deroulant>a::after {
+    /* integre symbole */
+    content: " ▼";
+    /* taille de la police */
+    font-size: 12px;
+}
+
+li a:hover {
+    /* fond coloré */
+    background-color: #111;
+}
+
+
+li a:hover {
+    /* change la couleur du fond quand on passe dessus */
+    background-color: #111;
+}
+
+/***** recherche emploi *****/
+
+
+.LogoVille {
+
+    margin-left: 30%;
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+}
+
+
+.ville {
+
+    margin-top: 10%;
+    background-size: cover;
+    width: 300px;
+    min-height: 300px;
+    border-left: 2px solid blue;
+    border-right: 3px solid red;
+    border-radius: 5%;
+    color: black;
+    width: 300px;
+    height: 200px;
+    /* background: linear-gradient(to right, rgb(243, 154, 0), rgb(41, 5, 5)); */
+    background: transparent;
+    position: relative;
+    background-size: cover;
+    margin-left: 30%;
+
+}
+
+.inter div,
+input {
+
+    margin-left: 30%;
+    margin-top: -5%;
+}
